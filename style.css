@@ -1,0 +1,109 @@
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+}
+body{
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100VH;
+}
+
+#container{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    max-width: 300px;
+    box-shadow: 0 16px 8px 16px rgba(0,0,0,0.1);
+}
+#container h1{
+    pointer-events: none;
+}
+
+/* efeito da borda */
+.line{
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    z-index: 1;
+    overflow: hidden;
+}
+.line::before{
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    background: blueviolet;
+    animation: animate 4s linear infinite;
+    z-index: 2;
+}
+@keyframes animate{
+    to{
+        transform: translate(-50%, -50%) rotate(1turn);
+    }
+}
+.line:after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #222;
+    z-index: 3;
+}
+
+
+#container .details{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    z-index: 10;
+    background-color: #222;
+}
+input{
+    padding: 10px;
+    margin-bottom: 0.5em;
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.568);
+    border: none;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input:focus{
+    outline: solid 1px blueviolet;
+    opacity: 0.7;
+}
+input::placeholder{
+    color: #fff;
+    opacity: .4;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: #000;
+    border: none;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+input:hover[type="submit"]{
+    opacity: 1;
+    color: #fff;
+}
+#resultado{
+    color: rgb(166, 87, 240)
+}
