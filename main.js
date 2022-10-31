@@ -33,9 +33,9 @@ function meat(duration){
 }
 function beer(duration){
     if(duration >= 6){
-        return 7200;
+        return 3000;
     }else{
-        return 1200;
+        return 1500;
     }
 }
 function soda(duration){
