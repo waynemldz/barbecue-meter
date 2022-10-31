@@ -1,8 +1,8 @@
 // Getting Elements
 
-let inputAdults = document.getElementById('adultos')
-let inputKids = document.getElementById('criancas')
-let inputDuration= document.getElementById('duracao')
+let inputAdults = document.getElementById('adults')
+let inputKids = document.getElementById('kids')
+let inputDuration= document.getElementById('duration')
 let result = document.getElementById('result')
 
 
@@ -18,10 +18,9 @@ function calc(){
     let totalBeer = beer(duration) * adults
     let totalSoda = soda(duration) * adults + (soda(duration)/2 * kids)
     result.innerHTML = `<p>${totalMeat / 1000}kg of meat</p>`
-    result.innerHTML += `<p>${Math.ceil(totalBeer / 355)} beer cans/p>`
+    result.innerHTML += `<p>${Math.ceil(totalBeer / 355)} beer cans </p>`
     result.innerHTML += `<p>${Math.ceil(totalSoda/2000)} soda bottles</p>`
 }
-
 
 // Basic quantity logic
 
