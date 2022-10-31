@@ -26,7 +26,7 @@ function calc(){
 
 function meat(duration){
     if(duration >= 6){
-        return 650;
+        return 700;
     }else{
         return 400;
     }
