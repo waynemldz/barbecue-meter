@@ -25,7 +25,8 @@ body{
     pointer-events: none;
 }
 
-/* efeito da borda */
+/* border effect */
+
 .line{
     position: absolute;
     inset: 0;
@@ -70,6 +71,9 @@ body{
     z-index: 10;
     background-color: #222;
 }
+
+/* Input */
+
 input{
     padding: 10px;
     margin-bottom: 0.5em;
@@ -83,8 +87,7 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type=number] { 
     -moz-appearance: none;
     appearance: none;
- 
- }
+}
 
 input:focus{
     outline: solid 1px blueviolet;
@@ -103,11 +106,10 @@ input[type="submit"]{
     padding: 20px;
     margin-top: 10px;
     border-radius: 5px;
-    opacity: 0.6;
 }
 input:hover[type="submit"]{
     opacity: 1;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.459);
 }
 #resultado{
     color: rgb(166, 87, 240)
