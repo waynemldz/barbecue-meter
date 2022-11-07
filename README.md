@@ -12,7 +12,7 @@ Projeto desenvolvido por mim, tendo como idéia através de um curso de full sta
 <br>
 
 <p align="center">
-  <img alt="churrascômetro" src=".github/preview.png" width="100%">
+  <img alt="churrascômetro" src="./.github/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
