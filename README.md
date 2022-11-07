@@ -1,7 +1,7 @@
 <h1 align="center"> Churrascômetro </h1>
 
 <p align="center">
-Projeto desenvolvido por mim, tendo como idéia através de um curso de full stack!
+Projeto desenvolvido por mim, inspirado por um curso em andamento!
 </p>
 
 <p align="center">
