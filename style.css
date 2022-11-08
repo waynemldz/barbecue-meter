@@ -2,16 +2,44 @@
     width: 6px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: blueviolet;
+    background:var(--scroll-bar-color);
+}
+:root{
+    --scroll-bar-color: blueviolet;
+    --bg-color: #222;
+    --color-text: blueviolet;
+    --border-effect-color: blueviolet;
+    --bg-card: #222;
+    --input-border: blueviolet;
+    --input-bg: #333;
+    --input-color-text: rgba(255, 255, 255, 0.568);
+    --input-placeholder-color: #fff;
+    --input-placeholder-opacity: 0.4;
+    --text-result-color: rgb(166, 87, 240);
+}
+
+
+body.flame{
+    --scroll-bar-color: #EB5E28;
+    --bg-color: #CCC5B9;
+    --color-text: #EB5E28;
+    --border-effect-color: #EB5E28;
+    --bg-card: #FFFCF2;
+    --input-border: #EB5E28;
+    --input-bg: #CCC5B9;
+    --input-color-text: #000;
+    --input-placeholder-color: #000;
+    --input-placeholder-opacity: .8;
+    --text-result-color: #ad380a;
 }
 body{
-    background-color: #222;
+    background-color: var(--bg-color);
     font-family: Arial, Helvetica, sans-serif;
-    color: blueviolet;
+    color: var(--color-text);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100VH;
+    min-height: 100vh;
 }
 
 #container{
@@ -42,7 +70,7 @@ body{
     position: absolute;
     width: 700px;
     height: 100px;
-    background: blueviolet;
+    background: var(--border-effect-color);
     animation: animate 4s linear infinite;
     z-index: 2;
 }
@@ -55,30 +83,29 @@ body{
     content: '';
     position: absolute;
     inset: 3px;
-    background: #222;
     z-index: 3;
 }
 
 
 #container .details{
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-    padding: 2px;
-    z-index: 10;
-    background-color: #222;
+    z-index: 999;
 }
+
+#container .details,
+.line:after{
+    background: var(--bg-card);
+}
+
 
 /* Input */
 
 input{
     padding: 10px;
     margin-bottom: 0.5em;
-    background-color: #333;
-    color: rgba(255, 255, 255, 0.568);
+    background: var(--input-bg);
+    color: var(--input-color-text);
+    font-weight: 600;
     border: none;
 }
 input[type="number"]::-webkit-inner-spin-button { 
@@ -90,17 +117,17 @@ input[type=number] {
 }
 
 input:focus{
-    outline: solid 1px blueviolet;
+    outline: solid 1px var(--input-border);
     opacity: 0.7;
 }
 input::placeholder{
-    color: #fff;
-    opacity: .4;
+    color: var(--input-placeholder-color);
+    opacity: var(--input-placeholder-opacity);
 }
 
 input[type="submit"]{
     cursor: pointer;
-    background-color: blueviolet;
+    background: var(--input-border);
     color: #000;
     border: none;
     padding: 20px;
@@ -112,5 +139,5 @@ input:hover[type="submit"]{
     color: rgba(255, 255, 255, 0.459);
 }
 #resultado{
-    color: rgb(166, 87, 240)
+    color: rgb(166, 87, 240);
 }
