@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O churrascômetro é um medidor de churrasco, onde mostrará conforme a quantidade de crianças, adultos e duração, uma quantidade pré-estabelecidade de carne, refrigerante e cerveja para a realização do evento.
+O churrascômetro é um medidor de churrasco, onde mostrará conforme a quantidade de crianças, adultos e duração, uma quantidade pré-estabelecidada de carne, refrigerante e cerveja para a realização do evento.
 
 
 ---
